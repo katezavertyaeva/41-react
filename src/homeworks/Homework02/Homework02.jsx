@@ -1,5 +1,14 @@
+import ProfileCard from "../../components/ProfileCard/ProfileCard";
+import "./styles.css";
+
 function Homework02() {
-  return <div>Здесь будет нужный компонент</div>;
+  return (
+    <div class="cards-container">
+      <ProfileCard />
+      <ProfileCard />
+      <ProfileCard />
+    </div>
+  );
 }
 
-export default Homework02
+export default Homework02;

@@ -1,12 +1,16 @@
 import "./styles.css";
 
-function Button() {
+function Button({ name = "Get", isPrimary = true }) {
+  //Лекция 2
   // const buttonName = "Get data";
-  const sendButton = "Send";
-  const getButton = "Get";
-  const isGetButton = false;
-  const buttonClass = "button-component";
+  // const sendButton = "Send";
+  // const getButton = "Get";
+  // const isGetButton = false;
+  // const buttonClass = "button-component";
 
+  // Лекция 3
+  const buttonClass = isPrimary ? "primary-button" : "delete-button";
+  // console.log(name, isPrimary);
   // 1 вариант
   // return <button className={buttonClass}>{buttonName}</button>;
   //
@@ -21,11 +25,15 @@ function Button() {
   // );
   //
   // 3 вариант
-  return (
-    <button className={buttonClass}>
-      {isGetButton ? getButton : sendButton}
-    </button>
-  );
+  // return (
+  //   <button className={buttonClass}>
+  //     {isGetButton ? getButton : sendButton}
+  //   </button>
+  // );
+  //
+  // 4 вариант
+  //button-component
+  return <button className={`button-component ${buttonClass}`}>{name}</button>;
 }
 
 export default Button;
