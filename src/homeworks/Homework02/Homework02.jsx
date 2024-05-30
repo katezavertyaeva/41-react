@@ -3,7 +3,7 @@ import "./styles.css";
 
 function Homework02() {
   return (
-    <div class="cards-container">
+    <div className="cards-container">
       <ProfileCard />
       <ProfileCard />
       <ProfileCard />

@@ -1,0 +1,8 @@
+.lesson04-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 400px;
+  padding: 20px;
+}

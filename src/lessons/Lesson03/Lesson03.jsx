@@ -1,4 +1,4 @@
-import Button from "../../components/Button/Button";
+import Button from "../../components/Button/OldButton";
 import AnimalCard from "../../components/AnimalCard/AnimalCard";
 import "./styles.css";
 import { lionData, zebraData, normalizeData } from "./data";
